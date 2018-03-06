@@ -13,7 +13,7 @@ type animal struct {
 	id         int
 	animalType string
 	nickname   string
-	zone       int
+	zona       int
 	age        int
 }
 
@@ -37,7 +37,7 @@ func main() {
 	animals := []animal{}
 	for rows.Next() {
 		a := animal{}
-		err := rows.Scan(&a.id, &a.animalType, &a.nickname, &a.zone, &a.age)
+		err := rows.Scan(&a.id, &a.animalType, &a.nickname, &a.zona, &a.age)
 		if err != nil {
 			log.Fatal(err)
 		}

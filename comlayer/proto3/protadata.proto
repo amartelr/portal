@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package proto3;
+
+message animal{
+	int32 id = 1;
+	string animal_type = 2;
+	string nickname = 3;
+	int32 zona = 4;
+	int32 age = 5;
+}
